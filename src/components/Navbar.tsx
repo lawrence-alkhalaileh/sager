@@ -1,4 +1,3 @@
-import { Bell, Globe, ScanLine } from "lucide-react";
 import { Link } from "react-router";
 
 const Navbar = () => {
@@ -15,13 +14,25 @@ const Navbar = () => {
 
           <div className="flex items-center space-x-6">
             <button className="p-2 rounded-full hover:bg-muted transition">
-              <Bell className="w-5 h-5" />
+              <img
+                src="/Icon/bell.svg"
+                alt="Notifications"
+                className="w-5 h-5"
+              />
             </button>
             <button className="p-2 rounded-full hover:bg-muted transition">
-              <Globe className="w-5 h-5" />
+              <img
+                src="/Icon/language-svgrepo-com.svg"
+                alt="Notifications"
+                className="w-5 h-5"
+              />
             </button>
             <button className="p-2 rounded-full hover:bg-muted transition">
-              <ScanLine className="w-5 h-5" />
+              <img
+                src="/Icon/capture-svgrepo-com.svg"
+                alt="Notifications"
+                className="w-5 h-5"
+              />
             </button>
 
             <div className="flex items-center space-x-3 border-l pl-4 ml-2">

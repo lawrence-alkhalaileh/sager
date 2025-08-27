@@ -1,4 +1,3 @@
-import { Map } from "lucide-react";
 import { Link } from "react-router";
 
 const Sidebar = () => {
@@ -10,7 +9,23 @@ const Sidebar = () => {
             to="/Map"
             className="flex flex-col items-center gap-1 rounded-md w-full px-2 py-2 text-sm"
           >
-            <Map size={20} />
+            <img
+              src="/Icon/dashboard-svgrepo-com-2.svg"
+              alt="Notifications"
+              className="w-5 h-5"
+            />
+            <span className="text-center text-xs">Map</span>
+          </Link>
+
+          <Link
+            to="/Map"
+            className="flex flex-col items-center gap-1 rounded-md w-full px-2 py-2 text-sm"
+          >
+            <img
+              src="/Icon/location-svgrepo-com-2.svg"
+              alt="Notifications"
+              className="w-5 h-5"
+            />
             <span className="text-center text-xs">Map</span>
           </Link>
         </div>

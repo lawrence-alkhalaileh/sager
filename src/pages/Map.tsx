@@ -5,7 +5,6 @@ import "mapbox-gl/dist/mapbox-gl.css";
 import { useDispatch, useSelector } from "react-redux";
 import { type RootState } from "@/store/store";
 import { updateDrone } from "@/store/droneSlice";
-import { Drone } from "lucide-react";
 import type { DroneFeature, RouteFeature } from "@/types/types";
 
 const MAPBOX_TOKEN = import.meta.env.VITE_MAP_BOX_ACCESS_TOKEN;
@@ -92,7 +91,7 @@ const MapComponent = () => {
           longitude={feature.geometry.coordinates[0]}
           latitude={feature.geometry.coordinates[1]}
         >
-          <Drone size={32} color="#FF0000" strokeWidth={2} />
+          <img src="/Icon/drone.svg" alt="Notifications" className="w-5 h-5" />
         </Marker>
       ))}
       <Source id="routes" type="geojson" data={routesGeoJSON}>
