@@ -1,14 +1,13 @@
+import type { Point, LineString } from "geojson";
+
 export interface DroneProperties {
   id: string;
-  [key: string]: any;
+  [key: string]: string | number | boolean | null;
 }
 
 export interface DroneFeature {
   type: "Feature";
-  geometry: {
-    type: "Point";
-    coordinates: [number, number];
-  };
+  geometry: Point;
   properties: DroneProperties;
 }
 
@@ -17,10 +16,7 @@ export interface RouteFeature {
   properties: {
     id: string;
   };
-  geometry: {
-    type: "LineString";
-    coordinates: [number, number][];
-  };
+  geometry: LineString;
 }
 
 export interface DroneData {

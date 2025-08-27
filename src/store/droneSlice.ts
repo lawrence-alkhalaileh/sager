@@ -1,5 +1,5 @@
 import { createSlice, type PayloadAction } from "@reduxjs/toolkit";
-import type { DroneData } from "@/types/types";
+import type { DroneData, DroneFeature } from "@/types/types";
 
 interface DroneState {
   drones: Record<string, DroneData>;
@@ -11,8 +11,8 @@ const initialState: DroneState = {
 
 interface DroneUpdatePayload {
   id: string;
-  feature: DroneData["feature"];
-  coords: number[];
+  feature: DroneFeature;
+  coords: [number, number];
 }
 
 const droneSlice = createSlice({
