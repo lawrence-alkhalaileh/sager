@@ -6,7 +6,7 @@ const Sidebar = () => {
       <nav className="flex-1 overflow-y-auto mt-2">
         <div className="flex flex-col items-center space-y-4 p-2">
           <Link
-            to="/Map"
+            to="/dashboard"
             className="flex flex-col items-center gap-1 rounded-md w-full px-2 py-2 text-sm"
           >
             <img
@@ -14,7 +14,7 @@ const Sidebar = () => {
               alt="Notifications"
               className="w-5 h-5"
             />
-            <span className="text-center text-xs">Map</span>
+            <span className="text-center text-xs">Dashboard</span>
           </Link>
 
           <Link
